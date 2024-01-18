@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Palmeiras</h1>
+        <nav class="navigation">
+            <a href="historia.html" class="button">História</a>
+            <a href="titulos.html" class="button">titulos</a>
+            <button class="btnLogin-popup">Faça login</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <div class="active-popup"></div>
+        <span class="fechar" id="fechar"></span>
+        <div class="form-box login">
+            <h2>login torcedor</h2>
+
+            <form action="login.php" method="post">
+
+                <div class="input-box">
+                    <span class="icon"><i class="bi bi-envelope"></i></span>
+                    <input type="text" name="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" name="senha" required>
+                    <label>senha</label>
+                </div>
+
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Ainda não tem conta?<a href="#" class="register-link" id="register">register</a></p>
+                </div>
+            </form>
+        </div>
+        
+        <div class="form-box register">
+            <h2>registro torcedor</h2>
+
+            <form action="register.php" method="post">
+
+                <div class="input-box">
+                    <span class="icon"><i class="bi bi-envelope"></i></span>
+                    <input type="text" name="nome" required>
+                    <label>nome</label>
+                </div>
+        
+                <div class="input-box">
+                    <span class="icon"><i class="bi bi-envelope"></i></span>
+                    <input type="email" name="email" required>
+                    <label>Email</label>
+                </div>
+        
+                <div class="input-box">
+                    <input type="password" name="senha" required>
+                    <label>senha</label>
+                </div>
+
+                <button type="submit" class="btn">register</button>
+                <div class="login-register">
+                    <p>se já tem conta clique <a href="#" class="login-link" id="login">login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="web.js"></script>
+</body>
+</html>
